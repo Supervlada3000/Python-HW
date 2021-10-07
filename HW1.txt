@@ -21,17 +21,18 @@ c = a + b
 print (float(c))
 
 # №4
-a = float(input())
+a = int(input())
 a1 = a // 100
 a3 = a % 10
 a = str(a1) + '0' +str(a3)
-print (float(a))
+print (a)
 
 # №5
-a = float(input())
+a = int(input())
 b = str(0)
 while a > 0:
     c = str(a % 10)
     a = a // 10
     b = b + c
-print(float(b))
+print(int(b))
+

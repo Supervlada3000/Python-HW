@@ -1,0 +1,37 @@
+# №1
+a = float(input())
+b = float(input())
+c = a
+a = b
+b = c
+print (a, b)
+
+# №2
+a = float(input())
+c = 1
+while a > 0:
+    c = c*(a%10)
+    a = a // 10
+print (c)
+
+# №3
+a = input()
+b = input()
+c = a + b
+print (float(c))
+
+# №4
+a = float(input())
+a1 = a // 100
+a3 = a % 10
+a = str(a1) + '0' +str(a3)
+print (float(a))
+
+# №5
+a = float(input())
+b = str(0)
+while a > 0:
+    c = str(a % 10)
+    a = a // 10
+    b = b + c
+print(float(b))

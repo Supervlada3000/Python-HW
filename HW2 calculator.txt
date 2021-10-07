@@ -1,0 +1,12 @@
+a = float(input())
+b = input()
+c = float(input())
+if b == '+':
+    s = a+c
+elif b == '-':
+    s = a-c
+elif b == '*':
+    s = a*c
+elif b == '/':
+    s = a/c
+print (a, b, c, '=', s)

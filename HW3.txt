@@ -1,0 +1,67 @@
+#№1
+
+n = int(input())
+k = int(input())
+print (k//n, k%n)
+
+#№2
+
+n = int(input())
+ch = n//60
+m = n % 60
+while ch > 23:
+    ch -= 24
+print (ch, ':',m)
+
+#№3
+
+n = int(input())
+if (n%4==0 and n%100!=0) or n%400==0:
+    print('YES')
+else:
+    print ('NO')
+
+#№4
+
+a = int(input())
+b = int(input())
+c = int(input())
+print(min(a, b, c))
+
+#№5
+
+strok1 = int(input())
+stolb1 = int(input())
+strok2 = int(input())
+stolb2 = int(input())
+if strok1%2==0 and strok2%2==0:
+    if stolb1%2 == stolb2%2:
+        print ('YES')
+    else:
+        print ('NO')
+elif strok1%2!=0 and strok2%2==0:
+    if stolb1%2 != stolb2%2:
+        print ('YES')
+    else:
+        print ('NO')
+elif strok1%2==0 and strok2%2!=0:
+    if stolb1%2 != stolb2%2:
+        print ('YES')
+    else:
+        print ('NO')
+elif strok1%2!=0 and strok2%2!=0:
+    if stolb1%2 == stolb2%2:
+        print ('YES')
+    else:
+        print ('NO')
+
+#№6
+
+strok1 = int(input())
+stolb1 = int(input())
+strok2 = int(input())
+stolb2 = int(input())
+if strok1 == strok2 or stolb1 == stolb2:
+    print ('YES')
+else:
+    print ('NO')

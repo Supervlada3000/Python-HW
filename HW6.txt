@@ -1,0 +1,57 @@
+#№1
+a = [1, 2, 3, 4, 5, 6, 7]
+def cp(a):
+    c = 0
+    for i in range (len(a)):
+        c += a[i]
+    return c/len(a)
+print(cp(a))
+
+#№2
+
+
+#№3
+def bank():
+    x = a*(1.1**years)
+    return x
+
+a = int(input())
+years = int(input())
+print (bank())
+
+#№4
+def distance():
+    return ((x1-x2)**2 + (y1-y2)**2)**0.5
+x1 = float(input())
+x2 = float(input())
+y1 = float(input())
+y2 = float(input())
+print(distance())
+
+#№5
+def power():
+    s = 1
+    for i in range(abs(n)):
+        s *= a
+    if n >= 0:
+        return s
+    else:
+        return float(1/s)
+a = int(input())
+n = int(input())
+print(power())
+
+#№6
+def is_prime():
+   if n < 2:
+       return False
+   if n == 2:
+       return True
+   i = 2
+   while i <= n**(1/2):
+       if n % i == 0:
+           return False
+       i += 1
+   return True
+n = int(input())
+print(is_prime())

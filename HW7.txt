@@ -1,0 +1,65 @@
+
+#№1
+a = set(input().split())
+print(len(a))
+
+#№2
+a = set(input().split())
+b = set(input().split())
+k = 0
+print(len(a.intersection(b)))
+
+#№3
+a = set(input().split())
+b = set(input().split())
+k = 0
+print(sorted(a.intersection(b)))
+
+#№4
+s = input().split()
+a = set(s)
+for i in range(0, len(s)):
+    if s[i] in a:
+        print('YES')
+        a.remove(s[i])
+    else:
+        print('NO')
+
+#№5
+a = set()
+c = int(input())
+for i in range (c):
+    d = input().split()
+    for i in d:
+        a.add(i)
+print(len(a))
+
+#№6
+a = {}
+c = input().split()
+for i in c:
+    a[i]=a.get(i,0)+1 
+    print(a[i]-1)
+
+#№8
+d = {}
+n = int(input())
+for i in range (n):
+    l = input().split()
+    for j in l:
+        d[j] = d.get(j, 0) + 1
+mx = max(d.values())
+for k, v in d.items():
+    if v == mx:
+        print(k)
+
+#№10
+d = {}
+n = int(input())
+for i in range (n):
+    country = input()
+    cities = input().split()
+    for city in cities:
+        d[city] = country
+print(d)
+
